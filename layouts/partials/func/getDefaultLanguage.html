@@ -1,5 +1,5 @@
 {{ $defaultLanguage := site.LanguageCode }}
-{{ if site.IsMultiLingual}}
+{{ if hugo.IsMultiLingual}}
   {{ $languages := site.Languages }}
   {{ $order := slice }}
   {{ range $languages }}
